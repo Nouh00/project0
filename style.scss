@@ -1,0 +1,58 @@
+$color: red;
+$font:  Adventure;
+$bgcolor:rgb(94, 91, 94);
+nav{
+    float: right;
+    a{
+        text-decoration: none;
+        color: $color;
+        font-family: $font;
+    }
+}
+#footer{
+    align-content: right;
+    margin: 20px;
+    background-color: $bgcolor;
+        ul{
+        list-style: none;
+       
+            }
+    }
+.table-striped{
+    padding: 5px;
+    border:solid 2px purple;
+    tr, td, {
+        padding: 5px;
+        th, td{
+            padding:5px;
+        }
+    }
+
+}
+@media (min-width: 700px){
+    #media::before{
+            content: "this a computer size";
+    }
+}
+@media (max-width: 699px){
+    #media::before{
+            content: "this a tablet size";
+    }
+}
+.button{
+    border-radius: 30px;
+    font-family: $font;
+}
+
+#join{
+    @extend .button;
+    height: 40px;
+    background-color: rgb(54, 134, 54,.6);
+    width: 80px;
+}
+#log{
+    @extend .button;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(34, 34, 126,.5);
+}

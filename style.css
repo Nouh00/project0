@@ -1,0 +1,57 @@
+nav {
+  float: right;
+}
+nav a {
+  text-decoration: none;
+  color: red;
+  font-family: Adventure;
+}
+
+#footer {
+  align-content: right;
+  margin: 20px;
+  background-color: #5e5b5e;
+}
+#footer ul {
+  list-style: none;
+}
+
+.table-striped {
+  padding: 5px;
+  border: solid 2px purple;
+}
+.table-striped tr, .table-striped td {
+  padding: 5px;
+}
+.table-striped tr th, .table-striped tr td, .table-striped td th, .table-striped td td {
+  padding: 5px;
+}
+
+@media (min-width: 700px) {
+  #media::before {
+    content: "this a computer size";
+  }
+}
+@media (max-width: 699px) {
+  #media::before {
+    content: "this a tablet size";
+  }
+}
+.button, #log, #join {
+  border-radius: 30px;
+  font-family: Adventure;
+}
+
+#join {
+  height: 40px;
+  background-color: rgba(54, 134, 54, 0.6);
+  width: 80px;
+}
+
+#log {
+  width: 60px;
+  height: 30px;
+  background-color: rgba(34, 34, 126, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */
